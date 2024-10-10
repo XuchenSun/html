@@ -10,14 +10,16 @@
 
 
   <link rel="icon" type="image/png" href="images/xu-logo.png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
   /* Set Root Color */
   :root {
     --main-white: #e5fff9;
 
-    --main-orang: yellowgreen;
-    --main-blue: #45567d;
+    --main-orang: #271D20;
+    --main-blue: yellowgreen;
     --main-gray: #303841;
   }
 
@@ -328,16 +330,16 @@
     min-width: 100%;
     height: 500px;
   }
-  
+
 </style>
 
 </head>
 <body>
 
-<!-- start NAV -->
+<!--
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-bottom: 0;">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -349,7 +351,7 @@
       <a class="navbar-brand" href="#">Xuchen</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
@@ -421,25 +423,102 @@
         </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
+ -->
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Web Development
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li ><a href="#cw_w">A Company Website</a></li>
+          <li><a href="#wa_w">Weather APP(API)</a></li>
+          <li><a href="#css_w">Customer Satisfaction Survey</a></li>
+
+          <li><a href="#pp_w">Promotion Page</a></li>
+
+          <li><a href="#fdp_w">Food Document Page</a></li>
+          <li><a href="#lr_w">Linear Regression(Tensorflow.js)</a></li>
+          <li><a href="#ar_w">Audio Recognition(Tensorflow.js)</a></li>
+          <li><a href="#pwp_w">Personal Web Page(previous)</a></li>
+          <li><a href="#pwp_w2">Personal Web Page2(previous)</a></li>
+
+          <li><a href="#lp_w">Login Page(static)</a></li>
+          <li><a href="#g2_w">Game 2048(development)</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">AWS and Terraform
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#lg_g">Common Terraform Code for AWS</a></li>
+          <li><a href="#gid_g">Use HCL(Terraform) to create AWS EC2</a></li>
+          <li><a href="#g2_g">Use HCL(Terraform) to create AWS ECS</a></li>
+
+          <li><a href="#gld_g">Use HCL(Terraform) to create AWS EKS</a></li>
+          <li><a href="#aw_g">Use HCL(Terraform) to create AWS VPC</a></li>
+          <li><a href="#gld_f">Use HCL(Terraform) AND Bash to install and Configure Splunk For AWS EC2</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Machine Learning Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#chatGPT">ChatGPT</a></li>
+          <li><a href="#gid_m">Game Image Design</a></li>
+          <li><a href="#icbf_m">Image Classification Based On Fully Connected Layer</a></li>
+          <li><a href="#icbc_m">Image Classification Based On CNN</a></li>
+
+          <li><a href="#gi_m">Generate Image By DCGAN</a></li>
+          <li><a href="#lrs_m">Linear Regression(sklearn)</a></li>
+          <li><a href="#lrt_m">Linear Regression(Tensorflow.js)</a></li>
+          <li><a href="#ar_m">Audio Recognition(Tensorflow.js)</a></li>
+
+
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hardware & Desktop
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#tld1_h">Traffic Light Design1 (VHDL)</a></li>
+          <li><a href="#tld2_h">Traffic Light Design2 (VHDL)</a></li>
+          <li><a href="#as_h">AI Speak</a></li>
+
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Download
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#as_d">AI Speak</a></li>
+          <li><a href="#aw_d">Astronaut wander</a></li>
+
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+   </div>
+</nav>
 <!-- END NAV -->
 
 <!-- start slide show -->
 
-
+<!--
 <div class="wppc">
 <div id="myCarousel" class="carousel slide" style="width: 50%;margin: auto;">
-  <!-- 轮播（Carousel）指标 -->
+
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
 
   </ol>
-  <!-- 轮播（Carousel）项目 -->
+
   <div class="carousel-inner">
     <div class="item active">
       <img src="images/me6.jpg" alt="First slide">
@@ -476,7 +555,7 @@
 
 
   </div>
-  <!-- 轮播（Carousel）导航 -->
+ 轮播（Carousel）导航
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -487,8 +566,8 @@
   </a>
 </div>
 </div>
-<!-- end slide show -->
 
+-->
 <!-- START PROJECTS SECTION -->
 
 <section id="web_projects" class="projects-section">
@@ -1128,8 +1207,6 @@
 
   </p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 
