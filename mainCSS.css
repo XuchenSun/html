@@ -1,0 +1,37 @@
+section{
+    background-image: radial-gradient(circle, chocolate,#00CED1, #AEDD81);
+}
+section.certificate{
+    background-image:linear-gradient(to bottom right,#00CED1,chocolate);
+
+}
+a {
+    cursor: cell;
+    color: #1f1f1f;
+
+    text-align: center;
+}
+a:hover{
+    color: #be3144;
+    border: #817bc6;
+    border-radius: 10px;
+}
+h1{
+    color: chocolate;
+    color-adjust: economy;
+   text-shadow: black 1px 1px 2px;
+    text-align: center;
+}
+
+h4{
+    color: darkorange;
+    text-align: center;
+}
+p{
+    color: darkorange;
+    text-align: center;
+}
+.introduction
+{
+    background-color: aqua;
+}
