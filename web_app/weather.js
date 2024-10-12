@@ -20,7 +20,7 @@ let weather={
 
         document.querySelector(".weather").classList.remove("loading");
 
-        document.body.style.backgroundImage="url('https://source.unsplash.com/user/erondu/1600x900/?"+ name +"')";
+        document.body.style.backgroundImage="url('image.jpg')";
     },
     
 
@@ -33,7 +33,7 @@ document.querySelector(".search button").addEventListener("click",function(){
 });
 
 document.querySelector(".search-bar").addEventListener("keyup", function(event){
-    if(event.key=="Enter"){
+    if(event.key==="Enter"){
         weather.search();
     }
 });
