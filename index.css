@@ -5,6 +5,7 @@
     --main-orang: #ff6600;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --main-BootStrap-Inverse: #222;
 }
 
 /* Set Reset Details */
@@ -99,12 +100,12 @@ img {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-orang);
+    background: var(--main-BootStrap-Inverse);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
 }

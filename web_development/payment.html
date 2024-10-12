@@ -67,7 +67,7 @@
                   read to the Terms of Service & Privacy Policy. 
                   <br/>
                   <br/>
-                  <input type="submit" disabled="disabled" value="Download" id="submit" style="position:absolute;left: 12%;top:80%" /> <br/>
+
                   <br/>
                 </form>
             </div>
@@ -134,11 +134,16 @@
             
         </div>
 
-        <button class="button_on_payment_page" id="last_page_button" style="position: absolute; left: 8%;top:80%" onclick="submitfunction()" >
-            <span>DOWNLOAD</span>
-        </button>
     </body>
-    <script src="button_test.js">
+    <script src="./button_test.js">
+        document.querySelector('#last_page_button').onmousemove = function (e) {
+
+            var x = e.pageX - e.target.offsetLeft;
+            var y = e.pageY - e.target.offsetTop;
+
+            e.target.style.setProperty('--x', x + 'px');
+            e.target.style.setProperty('--y', y + 'px');
+        };
         function submitfunction(){
             document.getElementById("submit").disabled="able";
         }
