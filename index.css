@@ -132,7 +132,7 @@ img {
 }
 
 .nav-list a:hover {
-    background: var(--main-blue);
+    background: greenyellow;
 }
 
 /* Welcome section */
@@ -164,7 +164,7 @@ img {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: greenyellow;
 }
 .projects-section:hover{
 

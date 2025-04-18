@@ -62,41 +62,28 @@ a{
     position: absolute;
     left: 83%;
     top: 7.3%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: white;
-    padding: 1.2em 4em;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
     border: none;
-    color: red;
-    font-weight:bolder;
-
-    font-size: 1em;
+    border-radius: 12px;
     cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    border-radius: 100px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
 }
-.button span {
-    position: relative;
-    pointer-events: none;
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+
 }
-.button::before {
-    --size: 0;
-    content: '';
-    position: absolute;
-    left: var(--x);
-    top: var(--y);
-    width: var(--size);
-    height: var(--size);
-    background: radial-gradient(circle closest-side, #4405f7, transparent);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    transition: width .2s ease, height .2s ease;
+.button:active {
+    transform: scale(0.98);
 }
-.button:hover::before {
-    --size: 400px;
-}
+
+
 
 .scroll,.panel{
     width:100%;
@@ -225,7 +212,7 @@ a{
 }
 
 .panelColor{
-    background:#fa96b5;
+    background:#191919;
     color:#fff;
 }
 
