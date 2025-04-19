@@ -35,7 +35,7 @@ li {
 }
 
 .btn {
-    padding: 0 20px;
+    padding: 20px 20px 20px 20px;
     height: 40px;
     font-size: 1em;
     font-weight: 900;
@@ -45,7 +45,49 @@ li {
     background: transparent;
     cursor: pointer;
 }
+.fancy-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 
+    /* Flexbox properties for centering */
+    display: flex;
+    justify-content: center; /* Horizontal Alignment */
+    align-items: center;    /* Vertical Alignment */
+}
+
+
+.fancy-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.fancy-button:hover::before {
+    top: -30%;
+    left: -30%;
+}
+
+.fancy-button:hover {
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
 .grid {
     display: flex;
 }
